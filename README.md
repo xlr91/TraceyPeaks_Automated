@@ -1,5 +1,6 @@
 # TraceyPeaks_Automated
-This is a modification of the Tracey Peaks Fitting program provided by R. Smith using Chi^2 minimisation program. This was written in MATLAB
+This is a modification of the Tracey Peaks Fitting program provided by R. Smith using Chi^2 minimisation program. This was written in MATLAB.
+The lines that need to be edited to run on other machines are commented in MATLAB. 
 
 
 Clone all the files in this repo, and put it into the Tracey_Peaker_V0_01_17 directory as provided from Canvas.

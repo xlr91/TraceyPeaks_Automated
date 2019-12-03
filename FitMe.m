@@ -1,7 +1,17 @@
 clc; clear; clear all; close all;
 
-%rips the filenames of each of the thingys
+
+%Lines to edit depending on the peaks/folder location
+%All files need to be put in a single folder
 folderstring = '~/Desktop/Nuclear_Lab_files/Tracey_Peaker_V0_01_17/source/';
+x_min = 1330;
+x_max = 1340;
+center_x = 1335;
+center_y = 15000;
+FWHM_guess = 10;
+
+
+%rips the filenames of each of the thingys
 folderpath = fullfile(folderstring, '**');
 filelist   = dir(folderpath);
 name       = {filelist.name};
@@ -10,14 +20,7 @@ sizee = size(name);
 parameters = zeros(sizee(2), 6);
 
 
-%setting up variables for the peak
-%prints = rip_me(filename, NumPeak, xmin, xmax, centerx, centery, FWHMguess)
 
-x_min = 1330;
-x_max = 1340;
-center_x = 1335;
-center_y = 15000;
-FWHM_guess = 10;
 
 %runs the traceypeakerV0 program for all files
 for k=1:sizee(2)

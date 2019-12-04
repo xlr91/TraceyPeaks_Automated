@@ -1,6 +1,22 @@
 %Variables = filename('MaestroTest137Cs.Spe'), NumPeaks(1) , xmin (408),xmax (649)
 % centerx (540), centery(900), FWHM(5)
 function prints = rip_me(filename, NumPeak, xmin, xmax, centerx, centery, FWHMguess)
+% rip_me Returns the parameters after the fitting function runs
+%   filename = String, location of the file
+%   NumPeaks = int, number of peaks
+%   xmin, xmax = Floats, the minimum and maximum possible x coordinates of
+%   where the peaks are
+%   centerx, centery = Floats, a guess of the x and y coordinates of the peak 
+%   FWHMguess = Float, guess of how large the FWHM is 
+%
+%returns prints 
+%A one dimensional array with 6 elements
+% of the format [Centroid, dCentroid, FWHM, dFWHM, Area, dArea]
+
+
+
+
+
 
 
 %filename='MaestroTest137Cs.Spe';

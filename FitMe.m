@@ -23,6 +23,7 @@ parameters = zeros(sizee(2), 6);
 
 
 %runs the traceypeakerV0 program for all files
+
 for k=1:sizee(2)
     %disp(name(k))
     stringg = string(append(folderstring, name(k)));
